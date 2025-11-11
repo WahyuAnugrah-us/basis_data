@@ -1,0 +1,31 @@
+id_pasien,nama_pasien,jenis_kelamin,umur,alamat,no_hp,penyakit,id_dokter,id_ruangan
+P001,Andi Saputra,L,32,"Jl. Melati No. 4, Makassar",81234567890,Demam Berdarah,D005,R003
+P002,Siti Rahmawati,P,45,"Jl. Anggrek No. 12, Gowa",81298765432,Diabetes,D003,R002
+P003,Budi Santoso,L,28,"Jl. Cendana No. 8, Maros",82198765432,Asma,D001,R021
+P004,Rina Marlina,P,36,"Jl. Mawar No. 15, Makassar",85678912345,Hipertensi,D002,R004
+P005,Joko Pranoto,L,50,"Jl. Dahlia No. 9, Gowa",81345678901,Stroke,D009,R013
+P006,Dewi Lestari,P,27,"Jl. Flamboyan No. 3, Maros",82134567890,Tifus,D005,R003
+P007,Ahmad Fauzi,L,33,"Jl. Kenanga No. 10, Makassar",81298712345,COVID-19,D004,R006
+P008,Putri Amelia,P,22,"Jl. Teratai No. 6, Gowa",81234599876,Infeksi Kulit,D013,R007
+P009,Rahmat Hidayat,L,29,"Jl. Kamboja No. 17, Makassar",82345678910,TBC,D001,R021
+P010,Nia Kurnia,P,40,"Jl. Angsana No. 2, Maros",81376543210,Anemia,D003,R002
+P011,Yanto Prabowo,L,35,"Jl. Merpati No. 11, Gowa",81277788899,Gastritis,D005,R003
+P012,Melati Ayu,P,30,"Jl. Cempaka No. 5, Makassar",82199900011,Demam,D004,R006
+P013,Dedi Kurniawan,L,26,"Jl. Kemuning No. 14, Maros",81255577799,Luka Bakar,D006,R008
+P014,Nur Aisyah,P,21,"Jl. Pandan No. 18, Gowa",81233344455,Demam,D004,R006
+P015,Fajar Setiawan,L,47,"Jl. Ketapang No. 9, Makassar",81245678912,Diabetes,D003,R002
+P016,Yuliana Sari,P,38,"Jl. Mangga No. 7, Maros",82166677788,Migrain,D002,R004
+P017,Hasan Basri,L,42,"Jl. Melur No. 16, Makassar",81299988877,Hipertensi,D010,R011
+P018,Ratna Dewi,P,25,"Jl. Jambu No. 19, Gowa",81255512345,Anemia,D003,R002
+P019,Arman Rahim,L,31,"Jl. Nangka No. 13, Maros",81244433322,Tifus,D005,R003
+P020,Sri Wahyuni,P,29,"Jl. Belimbing No. 1, Makassar",81200011122,COVID-19,D004,R006
+P021,Rafi Nugraha,L,8,"Jl. Rambutan No. 11, Gowa",81222334455,Demam Tinggi,D007,R009
+P022,Dinda Safitri,P,6,"Jl. Jeruk No. 22, Maros",81233445566,Batuk,D007,R010
+P023,Laila Prameswari,P,31,"Jl. Pinang No. 3, Makassar",81244556677,Hamil,D008,R014
+P024,Eko Purnomo,L,37,"Jl. Belimbing No. 7, Gowa",81255667788,Cedera Kaki,D015,R016
+P025,Rosi Amelia,P,44,"Jl. Nusa Indah No. 19, Maros",81266778899,Gigi Berlubang,D014,R015
+P026,Farhan Yusuf,L,52,"Jl. Kelapa No. 12, Makassar",81277889900,Gangguan Saraf,D009,R013
+P027,Lina Kartika,P,48,"Jl. Sirsak No. 4, Gowa",81288990011,Gangguan Jantung,D010,R012
+P028,Ahmad Zulkifli,L,56,"Jl. Pisang No. 8, Maros",81299001122,Stroke,D009,R013
+P029,Nabila Fitri,P,23,"Jl. Pepaya No. 9, Gowa",81211122233,Radang Tenggorokan,D011,R018
+P030,Fathur Rahman,L,34,"Jl. Durian No. 5, Makassar",81222233344,Katarak,D012,R019
