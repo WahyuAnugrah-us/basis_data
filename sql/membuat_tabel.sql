@@ -1,10 +1,8 @@
-***Membuat database***
-  *hanya menampilkan querry*
+--Membuat database--
 create tugas1_rumah_sakit
 use tugas1_rumah_sakit;
 
-***Membuat tabel***
-  *hanya menampilkan querry*
+--Membuat tabel--
 CREATE TABLE pasien (
      id_pasien CHAR(4) NOT NULL PRIMARY KEY,
      nama_pasien VARCHAR(70),
@@ -34,8 +32,7 @@ CREATE TABLE dokter(
      kapasitas int(2),
      tarif_per_hari int(9));
 
-***Struktur tabel***
-  *menampilkan querry dan output*
+--Struktur tabel--
 desc pasien;
 +---------------+---------------+------+-----+---------+-------+
 | Field         | Type          | Null | Key | Default | Extra |
