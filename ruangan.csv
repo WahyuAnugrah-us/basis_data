@@ -1,0 +1,26 @@
+id_ruangan,nama_ruangan,tipe_ruangan,kapasitas,tarif_per_hari
+R001,Ruang Isolasi Paru,Isolasi,2,500000
+R002,Ruang Gizi,Rawat Inap,4,350000
+R003,Ruang Infeksi,Rawat Inap,3,400000
+R004,Ruang Penyakit Dalam,Rawat Inap,3,375000
+R005,Ruang Bedah Umum,Operasi,2,600000
+R006,Ruang Umum A,Rawat Inap,5,300000
+R007,Ruang Kulit,Rawat Jalan,4,250000
+R008,Ruang Luka Bakar,Operasi,2,650000
+R009,Ruang Anak A,Rawat Inap,6,325000
+R010,Ruang Anak B,Rawat Inap,4,320000
+R011,Ruang Jantung A,Rawat Inap,3,500000
+R012,Ruang Jantung B,ICU,2,800000
+R013,Ruang Saraf,Rawat Inap,4,450000
+R014,Ruang Kandungan,Rawat Inap,5,380000
+R015,Ruang Gigi,Rawat Jalan,3,200000
+R016,Ruang Ortopedi,Rawat Inap,4,500000
+R017,Ruang Bedah Minor,Operasi,2,550000
+R018,Ruang THT,Rawat Jalan,3,250000
+R019,Ruang Mata,Rawat Jalan,3,230000
+R020,Ruang Umum B,Rawat Inap,5,300000
+R021,Ruang Paru-paru,Rawat Inap,4,420000
+R022,Ruang IGD,Gawat Darurat,6,600000
+R023,Ruang ICU,Intensif,2,900000
+R024,Ruang Rawat VIP,VIP,2,1000000
+R025,Ruang Bayi,Rawat Inap,5,350000
