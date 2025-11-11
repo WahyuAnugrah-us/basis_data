@@ -1,0 +1,16 @@
+id_dokter,nama_dokter,spesialisasi,no_hp,jam_mulai,jam_selesai
+D001,dr. Bambang Hidayat,Paru-paru,81223344556,08:00,14:00
+D002,dr. Sulastri Ahmad,Penyakit Dalam,81233344455,09:00,15:00
+D003,dr. Hendra Kusuma,Gizi Klinik,81244455566,07:30,13:30
+D004,dr. Intan Permata,Umum,81255566677,10:00,17:00
+D005,dr. Rudi Prasetyo,Infeksi Tropis,81266677788,08:30,14:30
+D006,dr. Nurul Fauziah,Bedah Umum,81277788899,09:00,16:00
+D007,dr. Arif Setiawan,Anak,81288899900,07:00,13:00
+D008,dr. Fitri Handayani,Kandungan,81299900011,08:00,15:00
+D009,dr. Dimas Putra,Saraf,81233300122,10:00,18:00
+D010,dr. Laila Amalia,Jantung,81244411133,07:30,13:30
+D011,dr. Rizky Aditya,THT,81255522244,09:00,15:00
+D012,dr. Maya Rosdiana,Mata,81266633355,08:00,14:00
+D013,dr. Wahyu Saputra,Kulit & Kelamin,81277744466,11:00,17:00
+D014,dr. Dwi Lestari,Gigi,81288855577,09:00,15:00
+D015,dr. Putra Ramadhan,Ortopedi,81299966688,08:00,14:00
