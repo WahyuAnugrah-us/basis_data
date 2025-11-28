@@ -1,3 +1,4 @@
+use tugas1_rumah_sakit;
 
 --menambah tabel--
 insert into ruangan values
@@ -97,4 +98,3 @@ select*from dokter;
 | D029      | dr. Hendra Firmansyah | Gigi               | 81255577788 | 09:00:00          | 15:00:00            |
 | D030      | dr. Silvia Ramadhani  | Umum               | 81266688899 | 10:00:00          | 17:00:00            |
 +-----------+-----------------------+--------------------+-------------+-------------------+---------------------+
-
