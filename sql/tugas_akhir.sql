@@ -3,8 +3,8 @@ use tugas1_rumah_sakit;
 
 --menampilkan nama pasien, penyakit pasien, usia pasien, nama dokter, nomor hp dokter, nama ruangan, dan tarif ruangan perhari--
 select pasien.nama_pasien, pasien.penyakit, pasien.usia, dokter.nama_dokter, dokter.no_hp, ruangan.nama_ruangan, ruangan.tarif_per_hari
-    -> from pasien, dokter, ruangan
-    -> where pasien.id_dokter = dokter.id_dokter and pasien.id_ruangan = ruangan.id_ruangan;
+    from pasien, dokter, ruangan
+    where pasien.id_dokter = dokter.id_dokter and pasien.id_ruangan = ruangan.id_ruangan;
     
 +------------------+--------------------+------+---------------------+-------------+----------------------+----------------+
 | nama_pasien      | penyakit           | usia | nama_dokter         | no_hp       | nama_ruangan         | tarif_per_hari |
@@ -50,9 +50,9 @@ select pasien.nama_pasien, pasien.penyakit, pasien.usia, dokter.nama_dokter, dok
   --menampilkan nama pasien, nama penyakit, usia dan jenis kelamin pasien, nama dan nomor hp dokter--
   --yang pasiennya berusia 30 tahun atau lebih dan jenis kelaminnya peerempuan--
 select pasien.nama_pasien, pasien.penyakit, pasien.usia, pasien.jenis_kelamin, dokter.nama_dokter, dokter.no_hp
-    -> from pasien
-    -> join dokter on pasien.id_dokter = dokter.id_dokter
-    -> where pasien.usia >= 30 and pasien.jenis_kelamin = 'p';
+    from pasien
+    join dokter on pasien.id_dokter = dokter.id_dokter
+    where pasien.usia >= 30 and pasien.jenis_kelamin = 'p';
 +------------------+--------------------+------+---------------+---------------------+-------------+
 | nama_pasien      | penyakit           | usia | jenis_kelamin | nama_dokter         | no_hp       |
 +------------------+--------------------+------+---------------+---------------------+-------------+
@@ -72,11 +72,11 @@ select pasien.nama_pasien, pasien.penyakit, pasien.usia, pasien.jenis_kelamin, d
   --menampilkan nama pasien penyakit dan jenis kelamin pasien, nama dan nomor hp dokter, nama, kapasitas dan tarif ruangan--
   --yang jenis kelaminnya laki laki dan kapasitas ruangan diatas 3--
  select pasien.nama_pasien, pasien.penyakit, pasien.usia, pasien.jenis_kelamin, dokter.nama_dokter, dokter.no_hp, ruangan.nama_ruangan, ruangan.kapasitas, ruangan.tarif_per_hari
-    -> from pasien
-    -> join dokter on pasien.id_dokter = dokter.id_dokter
-    -> join ruangan on pasien.id_ruangan = ruangan.id_ruangan
-    -> where pasien.jenis_kelamin = 'L'
-    -> and ruangan.kapasitas > 3;
+    from pasien
+    join dokter on pasien.id_dokter = dokter.id_dokter
+    join ruangan on pasien.id_ruangan = ruangan.id_ruangan
+    where pasien.jenis_kelamin = 'L'
+    and ruangan.kapasitas > 3;
 +----------------+----------------+------+---------------+---------------------+-------------+-----------------+-----------+----------------+
 | nama_pasien    | penyakit       | usia | jenis_kelamin | nama_dokter         | no_hp       | nama_ruangan    | kapasitas | tarif_per_hari |
 +----------------+----------------+------+---------------+---------------------+-------------+-----------------+-----------+----------------+
