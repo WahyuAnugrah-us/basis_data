@@ -1,5 +1,5 @@
 --Membuat database--
-create tugas1_rumah_sakit
+create tugas1_rumah_sakit;
 use tugas1_rumah_sakit;
 
 --Membuat tabel--
