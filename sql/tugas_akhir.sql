@@ -68,6 +68,27 @@ select pasien.nama_pasien, pasien.penyakit, pasien.usia, pasien.jenis_kelamin, d
 | Vina Pratiwi     | Rehabilitasi Fisik |   32 | P             | dr. Siti Komariah   | 81222233344 |
 +------------------+--------------------+------+---------------+---------------------+-------------+
 
+select
+    pasien.nama_pasien, pasien.penyakit, pasien.usia, pasien.jenis_kelamin,
+    dokter.nama_dokter, dokter.no_hp, timediff (dokter.jam_selesai_praktek, dokter.jam_mulai_praktek) as Durasi_kerja_dokter
+    from pasien
+    join dokter on pasien.id_dokter = dokter.id_dokter
+    where pasien.usia >= 30 and pasien.jenis_kelamin = 'p';
++------------------+--------------------+------+---------------+---------------------+-------------+---------------------+
+| nama_pasien      | penyakit           | usia | jenis_kelamin | nama_dokter         | no_hp       | Durasi_kerja_dokter |
++------------------+--------------------+------+---------------+---------------------+-------------+---------------------+
+| Siti Rahmawati   | Diabetes           |   45 | P             | dr. Hendra Kusuma   | 81244455566 | 06:00:00            |
+| Rina Marlina     | Hipertensi         |   36 | P             | dr. Sulastri Ahmad  | 81233344455 | 06:00:00            |
+| Nia Kurnia       | Anemia             |   40 | P             | dr. Hendra Kusuma   | 81244455566 | 06:00:00            |
+| Melati Ayu       | Demam              |   30 | P             | dr. Intan Permata   | 81255566677 | 07:00:00            |
+| Yuliana Sari     | Migrain            |   38 | P             | dr. Sulastri Ahmad  | 81233344455 | 06:00:00            |
+| Laila Prameswari | Hamil              |   31 | P             | dr. Fitri Handayani | 81299900011 | 07:00:00            |
+| Rosi Amelia      | Gigi Berlubang     |   44 | P             | dr. Dwi Lestari     | 81288855577 | 06:00:00            |
+| Lina Kartika     | Gangguan Jantung   |   48 | P             | dr. Laila Amalia    | 81244411133 | 06:00:00            |
+| Ayu Lestari      | Gangguan Saraf     |   30 | P             | dr. Fajar Santoso   | 81288899911 | 07:00:00            |
+| Vina Pratiwi     | Rehabilitasi Fisik |   32 | P             | dr. Siti Komariah   | 81222233344 | 06:00:00            |
++------------------+--------------------+------+---------------+---------------------+-------------+---------------------+
+
 
   --menampilkan nama pasien penyakit dan jenis kelamin pasien, nama dan nomor hp dokter, nama, kapasitas dan tarif ruangan--
   --yang jenis kelaminnya laki laki dan kapasitas ruangan diatas 3--
