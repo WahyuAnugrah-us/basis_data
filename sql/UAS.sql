@@ -241,3 +241,81 @@ select*from layanan;
           7 | ganti ban luar   | 180000
           8 | ganti aki        | 200000
 
+
+create user kasir with password 'kasir123';
+
+create user mekanik with password 'mekanik123';
+
+grant all privileges on all tables in schema public to kasir;
+
+grant select on all tables in schema public to kasir;
+
+create view laporan_lengkap as
+select
+t.id_transaksi,
+t.tanggal_masuk,
+p.nama as nama_pelanggan,
+p.kontak as kontak_pelanggan,
+m.nama as nama_mekanik,
+l.jenis as jenis_layanan,
+l.harga,
+t.status
+from transaksi t
+join pelanggan p on t.id_pelanggan = p.id_pelanggan
+join mekanik m on t.id_mekanik = m.id_mekanik
+join layanan l on t.id_layanan = l.id_layanan;
+
+grant select on laporan_lengkap to mekanik;                ^
+                  
+grant all privileges on laporan_lengkap to kasir;
+
+create table rekap_kinerja as
+select m.nama as nama_mekanik,
+  count(t.id_transaksi) as total_servis,
+  sum(l.harga) as total_pendapatan
+from transaksi t
+  join mekanik m on t.id_mekanik = m.id_mekanik
+  join layanan l on t.id_layanan = l.id_layanan
+where t.status = 'selesai'
+group by m.nama;
+
+select*from rekap_kinerja;
+ nama_mekanik  | total_servis | total_pendapatan
+---------------+--------------+------------------
+ andi pratama  |            4 |           145000
+ budi santoso  |            4 |           155000
+ cahyo nugroho |            4 |           315000
+ eko purnomo   |            3 |           580000
+
+select p.nama as nama_pelanggan,
+t.tanggal_masuk,
+l.jenis as jenis_layanan,
+m.nama as nama_mekanik,
+t.status
+from transaksi t
+join pelanggan p on t.id_pelanggan = p.id_pelanggan
+join layanan l on t.id_layanan = l.id_layanan
+join mekanik m on t.id_mekanik = m.id_mekanik;
+  nama_pelanggan   | tanggal_masuk |  jenis_layanan   | nama_mekanik  |    status
+-------------------+---------------+------------------+---------------+---------------
+ fajar shadiq      | 2025-02-01    | ganti oli mesin  | budi santoso  | selesai
+ agus salim        | 2025-02-01    | servis ringan    | andi pratama  | selesai
+ rudi hartono      | 2025-02-02    | servis cvt       | cahyo nugroho | selesai
+ bambang pamungkas | 2025-02-03    | servis besar     | eko purnomo   | selesai
+ joko susilo       | 2025-02-04    | ganti oli gardan | budi santoso  | selesai
+ reza rahardian    | 2025-02-05    | ganti kampas rem | andi pratama  | selesai
+ bayu nugraha      | 2025-02-06    | ganti aki        | cahyo nugroho | selesai
+ hendra setiawan   | 2025-02-07    | ganti ban luar   | eko purnomo   | selesai
+ rina wati         | 2025-02-08    | ganti oli mesin  | budi santoso  | selesai
+ dewi sartika      | 2025-02-09    | servis ringan    | andi pratama  | selesai
+ siti amina        | 2025-02-10    | servis cvt       | cahyo nugroho | selesai
+ lina marlina      | 2025-02-11    | ganti oli mesin  | eko purnomo   | selesai
+ indah permatasari | 2025-02-12    | ganti kampas rem | budi santoso  | selesai
+ tri utami         | 2025-02-13    | ganti oli gardan | andi pratama  | selesai
+ putri ayu         | 2025-02-14    | servis ringan    | cahyo nugroho | selesai
+ fajar shadiq      | 2025-02-15    | ganti ban luar   | eko purnomo   | belum selesai
+ agus salim        | 2025-02-15    | servis besar     | budi santoso  | belum selesai
+ rudi hartono      | 2025-02-15    | ganti oli mesin  | andi pratama  | belum selesai
+ bambang pamungkas | 2025-02-15    | servis cvt       | cahyo nugroho | belum selesai
+ joko susilo       | 2025-02-15    | servis ringan    | eko purnomo   | belum selesai
+
